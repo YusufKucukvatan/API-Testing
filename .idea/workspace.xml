@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="" />
+    <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/ExchangeRatesAPITests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/MetaWeatherTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/ORDSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/ORDSTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +52,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="ORDSTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MetaWeatherTests.test1">
+    <configuration name="ExchangeRatesAPITests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
@@ -56,15 +62,84 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.tests.day2" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day2.ORDSTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day2.ExchangeRatesAPITests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExchangeRatesAPITests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day2" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day2.ExchangeRatesAPITests" />
+      <option name="METHOD_NAME" value="test5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExchangeRatesAPITests.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day2" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day2.ExchangeRatesAPITests" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetaWeatherTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day2" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day2.MetaWeatherTests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MetaWeatherTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day2" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day2.MetaWeatherTests" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ORDSTest" />
+        <item itemvalue="JUnit.MetaWeatherTests.test1" />
+        <item itemvalue="JUnit.MetaWeatherTests.test2" />
+        <item itemvalue="JUnit.ExchangeRatesAPITests.test6" />
+        <item itemvalue="JUnit.ExchangeRatesAPITests.test5" />
+        <item itemvalue="JUnit.ExchangeRatesAPITests.test1" />
       </list>
     </recent_temporary>
   </component>
