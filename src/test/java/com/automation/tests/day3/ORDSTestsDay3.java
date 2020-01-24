@@ -6,6 +6,8 @@ import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.*;
@@ -88,11 +90,42 @@ public class ORDSTestsDay3 {
                 .accept("application/json")
         .when()
                 .get("/employees")
-        .thenReturn().jsonPath();
+        .thenReturn()
+                .jsonPath();
         // items[employee1, employee2, ....] ==> employee1 is items[0] in this case
         // to call this element's any value ==> item[0].keyName
         String nameOfFirstEmployee = json.getString("items[0].first_name");
+        String nameOfLastEmployee  = json.getString("items[-1].first_name");
         System.out.println("First employee name is: "+nameOfFirstEmployee);
+        System.out.println("Last employee name is: "+nameOfLastEmployee);
+        // In JSON, employee looks like object that consist of params and their values
+        // we can parse that json object and store in map
+        Map<String, ?> firstEmloyee = json.get("items[0]");
+        //System.out.println(firstEmloyee);
+        // since firstEmployee it's a map, we can iterate through it by using Entry. entry represents one <key, value> pair
+        for (Map.Entry<String, ?> entry : firstEmloyee.entrySet()) {
+            System.out.println("key: "+entry.getKey()+", value: "+entry.getValue());
+
+        }
+    }
+
+
+    //write a code to get info from countries as List<Map<k,v>>
+    // prettyPrint()==> prints json/xml/html in nice format and returns string, thus we cannot retrieve jsonpath without extraction...
+    // prettyPeek() ==> first prints then returns Response object and from that object we can get json path.
+    @Test
+    public  void  test6(){
+
+        JsonPath json = given()
+                .accept("application/json")
+        .when()
+                .get("countries").prettyPeek().jsonPath();
+        List<Map<String, ?>> allCountries = json.get("items");
+        //System.out.println(allCountries);
+        for (Map<String, ?> map: allCountries) {
+            System.out.println(map);
+        }
+
     }
 
 }

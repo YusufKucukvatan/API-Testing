@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day3/ORDSTestsDay3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/utilities/ConfigurationReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/ExchangeRatesAPITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/ExchangeRatesAPITests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ExchangeRatesAPITests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ExchangeRatesAPITests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day3/ORDSTestsDay3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day3/ORDSTestsDay3.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,23 +54,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ORDSTestsDay3.test5">
-    <configuration name="ORDSTestsDay3.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="summer-2019-online-rest-assured-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.tests.day3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day3" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day3.ORDSTestsDay3" />
-      <option name="METHOD_NAME" value="test1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ORDSTestsDay3.test6">
     <configuration name="ORDSTestsDay3.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
@@ -139,13 +119,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ORDSTestsDay3.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day3" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day3.ORDSTestsDay3" />
+      <option name="METHOD_NAME" value="test6" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ORDSTestsDay3.test6" />
         <item itemvalue="JUnit.ORDSTestsDay3.test5" />
         <item itemvalue="JUnit.ORDSTestsDay3.test4" />
         <item itemvalue="JUnit.ORDSTestsDay3.test3" />
         <item itemvalue="JUnit.ORDSTestsDay3.test2" />
-        <item itemvalue="JUnit.ORDSTestsDay3.test1" />
       </list>
     </recent_temporary>
   </component>
