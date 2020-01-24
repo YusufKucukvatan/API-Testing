@@ -52,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MetaWeatherTests.test1">
+  <component name="RunManager" selected="JUnit.ExchangeRatesAPITests.test1">
     <configuration name="ExchangeRatesAPITests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
@@ -135,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ExchangeRatesAPITests.test1" />
         <item itemvalue="JUnit.MetaWeatherTests.test1" />
         <item itemvalue="JUnit.MetaWeatherTests.test2" />
         <item itemvalue="JUnit.ExchangeRatesAPITests.test6" />
         <item itemvalue="JUnit.ExchangeRatesAPITests.test5" />
-        <item itemvalue="JUnit.ExchangeRatesAPITests.test1" />
       </list>
     </recent_temporary>
   </component>
