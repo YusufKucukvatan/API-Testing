@@ -19,7 +19,7 @@ public class ExchangeRatesAPITests {
     @Test
     public void test1() {
         Response response = given().
-                get(baseURI + "latest");
+                            get(baseURI + "latest");
         //verify status code
         assertEquals(200, response.getStatusCode());
         System.out.println(response.prettyPrint());
@@ -28,6 +28,10 @@ public class ExchangeRatesAPITests {
     @Test
     public void test2() {
         Response response = given().get(baseURI + "latest");
+        System.out.println(response.getHeaders().toString());
+        System.out.println(response.getHeader("Date"));
+        System.out.println(response.getBody().asString());
+        System.out.println(response.getBody().prettyPrint());
         //verify that content type is json
         assertEquals(200, response.getStatusCode());
         //verify that data is coming as json
@@ -44,7 +48,7 @@ public class ExchangeRatesAPITests {
         Response response = given().
                             baseUri(baseURI).
                             basePath("latest").
-                            queryParam("base", "USD").
+                            queryParam("base", "GBP").
                             get();
         assertEquals(200, response.getStatusCode());
         System.out.println(response.prettyPrint());
@@ -64,7 +68,7 @@ public class ExchangeRatesAPITests {
         System.out.println("Today's date is: "+todaysDate);
     }
     //TASK: Get the currency for year 2000.
-    //GET https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2018-09-01&symbols=ILS,JPY HTTP/1.1
+    //GET https://api.exchangeratesapi.io/history?start_at=2018-01-01&end_at=2018-09-01&symbols=EUR,GBP,JPY HTTP/1.1
     @Test
     public void test5(){
         Response response=given().
