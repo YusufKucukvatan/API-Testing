@@ -2,17 +2,18 @@ package com.automation.tests.day3;
 
 import com.automation.utilities.ConfigurationReader;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.hamcrest.Matchers.*;
+
 public class ORDSTestsDay3 {
 
     @BeforeAll
@@ -125,6 +126,42 @@ public class ORDSTestsDay3 {
         for (Map<String, ?> map: allCountries) {
             System.out.println(map);
         }
+
+    }
+
+    // get collection of employee's salaries
+    // then sort it
+    // and print
+    @Test
+    public void test7(){
+        List<Integer> salaries = given().
+                accept("application/json")
+                .when().
+                get("/employees")
+                .thenReturn().jsonPath().get("items.salary");
+        Collections.sort(salaries);//sort from a to z, 0-9
+        Collections.reverse(salaries);
+        System.out.println(salaries);
+    }
+
+    //get collection of phone numbers, from employees
+    //and replace all dots "." in every phone number with dash "-"
+
+
+    @Test
+    public void test8(){
+        given().contentType(ContentType.JSON)
+                //accept("application/json")
+                .pathParam("location_id", 1700)
+                .when().get("/locations/{location_id}")
+                .then().assertThat().body("location_id", is(1700))
+                .assertThat().body("postal_code", is("98199"))
+                .assertThat().body("city", is("Seattle"))
+                .assertThat().body("state_province", is("Washington"))
+                .log().body();
+        ;
+
+
 
     }
 
