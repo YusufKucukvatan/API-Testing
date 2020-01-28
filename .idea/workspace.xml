@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day5/ORDSTestsDay5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/murodil/SpartanTestsWithJsonPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/pojos/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/pojos/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/MateWeatherJsonPathTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/MateWeatherJsonPathTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/murodil/Day5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/murodil/Day5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day5/POJOTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day5/POJOTesting.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,55 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ORDSTestsDay5.test1">
-    <configuration name="Day5.test1_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="summer-2019-online-rest-assured-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.tests.murodil.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.murodil" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.murodil.Day5" />
-      <option name="METHOD_NAME" value="test1_1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day5.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="summer-2019-online-rest-assured-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.tests.murodil.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.murodil" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.murodil.Day5" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MateWeatherJsonPathTests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="summer-2019-online-rest-assured-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.tests.day4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.MateWeatherJsonPathTests" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.POJOTesting.test3">
     <configuration name="MateWeatherJsonPathTests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
@@ -141,13 +90,61 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="POJOTesting.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day5" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day5.POJOTesting" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POJOTesting.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day5" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day5.POJOTesting" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POJOTesting.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.tests.day5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.tests.day5" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day5.POJOTesting" />
+      <option name="METHOD_NAME" value="test3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.POJOTesting.test3" />
+        <item itemvalue="JUnit.POJOTesting.test2" />
+        <item itemvalue="JUnit.POJOTesting.test1" />
         <item itemvalue="JUnit.ORDSTestsDay5.test1" />
         <item itemvalue="JUnit.MateWeatherJsonPathTests.test5" />
-        <item itemvalue="JUnit.MateWeatherJsonPathTests.test4" />
-        <item itemvalue="JUnit.Day5.test2" />
-        <item itemvalue="JUnit.Day5.test1_1" />
       </list>
     </recent_temporary>
   </component>
