@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/MateWeatherJsonPathTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day5/ORDSTestsDay5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/murodil/SpartanTestsWithJsonPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/ORDSTestsDay4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/ORDSTestsDay4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ExchangeRatesAPITests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ExchangeRatesAPITests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/MetaWeatherTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/MetaWeatherTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/MateWeatherJsonPathTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/MateWeatherJsonPathTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/murodil/Day5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/murodil/Day5.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +30,7 @@
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -41,7 +41,7 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -60,40 +60,40 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MateWeatherJsonPathTests.test3">
-    <configuration name="MateWeatherJsonPathTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ORDSTestsDay5.test1">
+    <configuration name="Day5.test1_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.tests.day4.*" />
+          <option name="PATTERN" value="com.automation.tests.murodil.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.MateWeatherJsonPathTests" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="com.automation.tests.murodil" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.murodil.Day5" />
+      <option name="METHOD_NAME" value="test1_1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MateWeatherJsonPathTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day5.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.tests.day4.*" />
+          <option name="PATTERN" value="com.automation.tests.murodil.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.MateWeatherJsonPathTests" />
+      <option name="PACKAGE_NAME" value="com.automation.tests.murodil" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.murodil.Day5" />
       <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MateWeatherJsonPathTests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MateWeatherJsonPathTests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +103,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
       <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.MateWeatherJsonPathTests" />
-      <option name="METHOD_NAME" value="test3" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ORDSTestsDay4.test9_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MateWeatherJsonPathTests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
@@ -118,24 +118,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.ORDSTestsDay4" />
-      <option name="METHOD_NAME" value="test9_1" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.MateWeatherJsonPathTests" />
+      <option name="METHOD_NAME" value="test5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ORDSTestsDay4.test9_2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ORDSTestsDay5.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.tests.day4.*" />
+          <option name="PATTERN" value="com.automation.tests.day5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.ORDSTestsDay4" />
-      <option name="METHOD_NAME" value="test9_2" />
+      <option name="PACKAGE_NAME" value="com.automation.tests.day5" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day5.ORDSTestsDay5" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MateWeatherJsonPathTests.test3" />
-        <item itemvalue="JUnit.MateWeatherJsonPathTests.test2" />
-        <item itemvalue="JUnit.MateWeatherJsonPathTests.test1" />
-        <item itemvalue="JUnit.ORDSTestsDay4.test9_1" />
-        <item itemvalue="JUnit.ORDSTestsDay4.test9_2" />
+        <item itemvalue="JUnit.ORDSTestsDay5.test1" />
+        <item itemvalue="JUnit.MateWeatherJsonPathTests.test5" />
+        <item itemvalue="JUnit.MateWeatherJsonPathTests.test4" />
+        <item itemvalue="JUnit.Day5.test2" />
+        <item itemvalue="JUnit.Day5.test1_1" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1579797719872</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Day4">
+      <created>1580166045521</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580166045521</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +194,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second" />
+    <MESSAGE value="Day4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Day4" />
   </component>
 </project>
