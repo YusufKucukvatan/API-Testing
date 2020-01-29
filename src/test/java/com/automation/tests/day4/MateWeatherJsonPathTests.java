@@ -149,6 +149,19 @@ public class MateWeatherJsonPathTests {
         System.out.println(actual);
 
     }
-
+    @Test
+    public void test6(){
+        List<String> expected=List.of("BBC","Forecast.io","HAMweather","Met Office","OpenWeatherMap","Weather Underground","World Weather Online");
+        Response response =
+                given()
+                        .accept(ContentType.JSON)
+                        .pathParam("param", 44418)
+                        .when()
+                        .get("/location/{param}").prettyPeek();
+        JsonPath json=response.jsonPath();
+        List<String> actual=json.getList("sources.title");
+        assertEquals(expected,actual);
+        System.out.println(actual);
+    }
 
 }
