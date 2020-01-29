@@ -40,8 +40,8 @@ public class MateWeatherJsonPathTests {
                .then()
                     .assertThat()
                         .statusCode(200)
-               .body("",hasSize(5))
-               .log().body();
+                        .body("",hasSize(5))
+                    .log().body();
 
 
     }
@@ -91,8 +91,8 @@ public class MateWeatherJsonPathTests {
                 .get("/search")
                 .then()
                 .assertThat()
-                .statusCode(200)
-                .body("title", contains("Glasgow","Dallas","Las Vegas"));
+                    .statusCode(200)
+                    .body("title", contains("Glasgow","Dallas","Las Vegas"));
         // hasItems ==> exact match
         // contains ==> partial match
     }
@@ -142,10 +142,11 @@ public class MateWeatherJsonPathTests {
                 .accept(ContentType.JSON)
                 .pathParam("param", 44418)
         .when()
-                .get("/location/{param}");
+                .get("/location/{param}").prettyPeek();
         JsonPath json=response.jsonPath();
         List<String> actual=json.getList("sources.title");
         assertEquals(expected,actual);
+        System.out.println(actual);
 
     }
 

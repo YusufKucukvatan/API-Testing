@@ -1,5 +1,6 @@
 package com.automation.tests.day2;
 
+import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
@@ -10,10 +11,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class ORDSTest {
-    // address of ORDS web service, that is runnig on AWS EC2.
+    // address of ORDS web service, that is running on AWS EC2.
     // data is coming from SQL Oracle data base to this web service
-    // during back-end testing with SQL developer and JDBC API
-    // we are accessing data base directly
+    // during back-end testing with SQL developer and JDBC API we are accessing data base directly
     // now we are gonna access web service
     private String baseURI= "http://ec2-34-201-69-55.compute-1.amazonaws.com:1000/ords/hr";
 
@@ -26,10 +26,12 @@ public class ORDSTest {
     //verify that status code is 200
     @Test
     public  void test1() {
-        Response response =  given().get(baseURI+"/employees");
+        Response response =  get(baseURI+"/employees");
+        response.prettyPrint();
+        //String str = response.prettyPrint(); //=> prints the response body and returns body as String
         assertEquals(200, response.getStatusCode());
-        //System.out.println(response.getBody().asString());
-        System.out.println(response.prettyPrint());
+        System.out.println(response.getBody().asString());
+        //System.out.println(response.prettyPrint());
     }
 
 
@@ -42,8 +44,8 @@ public class ORDSTest {
         // in this example, we are specifying what kind of response type we need.
         // because web service can return json or xml
         // when we put header info "Accept", "application/json" we are saying that we need only json as response
-        Response response = given().
-                header("Accept", "application/json").
+        Response response = given()
+                .header("Accept", "application/json").
                 get(baseURI+"/employees/100");
         int expectedStatusCode = 200;
         int actualStatusCode=response.getStatusCode();
@@ -62,7 +64,7 @@ public class ORDSTest {
         for (Header h : response.getHeaders()){
             System.out.println(h);
         }
-        System.out.println(response.prettyPrint());
+        response.prettyPrint();
 
     }
 }

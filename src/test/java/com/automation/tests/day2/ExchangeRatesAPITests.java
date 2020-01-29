@@ -22,16 +22,16 @@ public class ExchangeRatesAPITests {
                             get(baseURI + "latest");
         //verify status code
         assertEquals(200, response.getStatusCode());
-        System.out.println(response.prettyPrint());
+        response.prettyPrint();
     }
 
     @Test
     public void test2() {
-        Response response = given().get(baseURI + "latest");
+        Response response = given().get(baseURI + "latest").prettyPeek();
         System.out.println(response.getHeaders().toString());
         System.out.println(response.getHeader("Date"));
         System.out.println(response.getBody().asString());
-        System.out.println(response.getBody().prettyPrint());
+        response.prettyPrint();
         //verify that content type is json
         assertEquals(200, response.getStatusCode());
         //verify that data is coming as json
@@ -72,13 +72,12 @@ public class ExchangeRatesAPITests {
     @Test
     public void test5(){
         Response response=given().
-                baseUri(baseURI+"history").
                 queryParam("start_at", "2000-01-01").
                 queryParam("end_at", "2000-12-31").
                 queryParam("base", "USD").
                 queryParam("symbols", "EUR","GBP","JPY").
-                get();
-        System.out.println(response.prettyPrint());
+                get(baseURI+"history");
+        response.prettyPrint();
 
     }
 

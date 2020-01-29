@@ -28,6 +28,7 @@ public class ORDSTestsDay3 {
         // we are asking for json as a response
         given()
                 .accept("application/json")
+        .when()
                 .get("/employees")
         .then()
                 .assertThat().statusCode(200)
@@ -35,7 +36,25 @@ public class ORDSTestsDay3 {
                 .assertThat().contentType("application/json")
                 .log().ifError()
                 .log().all(true);
+
     }
+    @Test
+    public void testx(){
+        // .accept("application/json) is shortcut for header("Accept", "application/json")
+        // we are asking for json as a response
+        given()
+                .accept("application/json")
+                .when()
+                .get("/employees/101")
+                .then()
+                .assertThat().statusCode(200)
+                .and()
+                .assertThat().contentType("application/json")
+                .log().ifError()
+                .log().all(true);
+
+    }
+
     @Test
     public void test2(){
         given()
@@ -82,7 +101,7 @@ public class ORDSTestsDay3 {
         .then()
                 .assertThat().statusCode(200)
                 .assertThat().body("region_name", is("Europe"))
-                .time(lessThan(2000L), TimeUnit.MILLISECONDS)
+                .assertThat().time(lessThan(2000L), TimeUnit.MILLISECONDS)
                 .log().all(true);
     }
     @Test

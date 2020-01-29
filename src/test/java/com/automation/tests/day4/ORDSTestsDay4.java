@@ -62,7 +62,7 @@ public class ORDSTestsDay4 {
                         .when()
                         .get("/countries");
         JsonPath json = response.jsonPath();
-        List<?> links = json.getList("links.href");
+        List<Object> links = json.getList("links.href");
         for (Object link : links) {
             System.out.println(link);
         }
@@ -90,6 +90,7 @@ public class ORDSTestsDay4 {
                         .accept(ContentType.JSON)
                         .queryParam("q", "{\"region_id\":\"2\"}")
                         .get("/countries");
+
         JsonPath json = response.jsonPath();
         List<?> actual = json.getList("items.country_name");
         assertEquals(expected, actual);
