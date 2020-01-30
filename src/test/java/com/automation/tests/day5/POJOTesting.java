@@ -46,7 +46,9 @@ public class POJOTesting {
         System.out.println(job.getMax_salary());
         System.out.println(job.getMin_salary());
     }
-    @Test@DisplayName("Convert from POJO fto JSON")
+
+    @Test
+    @DisplayName("Convert from POJO fto JSON")
     public void test2(){
         Job sdet_pojo = new Job("SDET", "Software Development Engineer in Test", 90_000, 125_000);
 
