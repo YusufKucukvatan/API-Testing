@@ -131,5 +131,42 @@ public class SpartanTests {
         System.out.println(spartanFromResponse.getSpartan_name());
         System.out.println(spartanFromResponse.getSpartan_phone());
 
+        when()
+                .delete("/spartans/{id}", spartanFromResponse.getSpartan_id())
+                .prettyPeek()
+        .then().assertThat().statusCode(204);
+    }
+
+    @Test
+    @DisplayName("Delete user")
+    public void test6(){
+        int userId = 125;
+        Response response =  when().delete("/spartans/{id}", userId);
+        response.prettyPeek();
+    }
+
+    @Test
+    @DisplayName("Delete half of the records")
+    public void test7(){
+        Response response = given()
+                .accept(ContentType.JSON)
+                .when()
+                .get("/spartans");
+        List<Integer> userIDs = response.jsonPath().getList("id");
+        Collections.sort(userIDs, Collections.reverseOrder());
+        System.out.println(userIDs);
+
+        for (int i=0; i<userIDs.size()/2; i++){
+            when().delete("spartans/{id}", userIDs.get(i));
+        }
+        Response response1 = given()
+                .accept(ContentType.JSON)
+                .when()
+                .get("/spartans");
+
+        List<Integer> newUserIDs = response1.jsonPath().getList("id");
+        Collections.sort(newUserIDs, Collections.reverseOrder());
+        System.out.println(newUserIDs);
+
     }
 }
