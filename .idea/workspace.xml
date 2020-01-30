@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/DataDrivenAPITests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/MateWeatherJsonPathTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day4/MateWeatherJsonPathTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day5/SchoolTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day5/SchoolTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/student.json" beforeDir="false" afterPath="$PROJECT_DIR$/student.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ExchangeRatesAPITests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ExchangeRatesAPITests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,13 +34,15 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.automation.tests.day4" />
       <recent name="com.automation.utilities" />
     </key>
   </component>
@@ -60,8 +58,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.School.test3">
-    <configuration name="MateWeatherJsonPathTests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DataDrivenAPITests.validateRegionNameTest3">
+    <configuration name="DataDrivenAPITests.validateRegionNameTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
@@ -70,14 +68,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.MateWeatherJsonPathTests" />
-      <option name="METHOD_NAME" value="test5" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.DataDrivenAPITests" />
+      <option name="METHOD_NAME" value="validateRegionNameTest1(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MateWeatherJsonPathTests.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DataDrivenAPITests.validateRegionNameTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
@@ -86,8 +84,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.tests.day4" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.MateWeatherJsonPathTests" />
-      <option name="METHOD_NAME" value="test6" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day4.DataDrivenAPITests" />
+      <option name="METHOD_NAME" value="validateRegionNameTest3(int,java.lang.String)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataDrivenAPITests.validateRegionNameTest3" />
+        <item itemvalue="JUnit.DataDrivenAPITests.validateRegionNameTest1" />
         <item itemvalue="JUnit.School.test3" />
         <item itemvalue="JUnit.School.test2" />
         <item itemvalue="JUnit.School.test1" />
-        <item itemvalue="JUnit.MateWeatherJsonPathTests.test6" />
-        <item itemvalue="JUnit.MateWeatherJsonPathTests.test5" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580322548259</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Day5">
+      <created>1580336195075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1580336195075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
