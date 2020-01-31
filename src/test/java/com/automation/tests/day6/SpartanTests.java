@@ -1,6 +1,7 @@
 package com.automation.tests.day6;
 import com.automation.pojos.Spartan;
 import com.automation.utilities.ConfigurationReader;
+import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
@@ -113,7 +114,7 @@ public class SpartanTests {
 
         Spartan spartan = new Spartan();
         spartan.setSpartan_gender("Male");
-        spartan.setSpartan_name("Immo");
+        spartan.setSpartan_name("Jenny");
         spartan.setSpartan_phone(5711234567L);
 
         Response response = given()
@@ -167,6 +168,21 @@ public class SpartanTests {
         List<Integer> newUserIDs = response1.jsonPath().getList("id");
         Collections.sort(newUserIDs, Collections.reverseOrder());
         System.out.println(newUserIDs);
+    }
 
+    @Test
+    @DisplayName("Adding new records through faker")
+    public void test8(){
+        Faker faker = new Faker();
+        for(int i=0; i<10; i++){
+        Spartan spartan = new Spartan();
+        spartan.setSpartan_gender("Male");
+        spartan.setSpartan_name(faker.name().firstName());
+        spartan.setSpartan_phone(Long.parseLong(faker.phoneNumber().subscriberNumber(12).replaceAll("\\D","")));
+            given()
+                    .contentType(ContentType.JSON)
+                    .body(spartan)
+                    .post("/spartans").prettyPrint();
+        }
     }
 }

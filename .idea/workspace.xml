@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/GitHub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day6/SpartanTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day6/SpartanTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/utilities/APIUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/utilities/APIUtilities.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,40 +64,56 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpartanTests.test7">
-    <configuration name="POJOTesting.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GitHub.test3">
+    <configuration name="GitHub.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.tests.day5.*" />
+          <option name="PATTERN" value="com.automation.selfStudy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day5" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day5.POJOTesting" />
+      <option name="PACKAGE_NAME" value="com.automation.selfStudy" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.selfStudy.GitHub" />
       <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpartanTests.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GitHub.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.automation.tests.day6.*" />
+          <option name="PATTERN" value="com.automation.selfStudy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day6" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day6.SpartanTests" />
+      <option name="PACKAGE_NAME" value="com.automation.selfStudy" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.selfStudy.GitHub" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GitHub.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="summer-2019-online-rest-assured-testing" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.automation.selfStudy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.automation.selfStudy" />
+      <option name="MAIN_CLASS_NAME" value="com.automation.selfStudy.GitHub" />
       <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpartanTests.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpartanTests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +123,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.tests.day6" />
       <option name="MAIN_CLASS_NAME" value="com.automation.tests.day6.SpartanTests" />
-      <option name="METHOD_NAME" value="test4" />
+      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpartanTests.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpartanTests.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="summer-2019-online-rest-assured-testing" />
       <extension name="coverage">
         <pattern>
@@ -119,23 +139,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.automation.tests.day6" />
       <option name="MAIN_CLASS_NAME" value="com.automation.tests.day6.SpartanTests" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpartanTests.test7" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="summer-2019-online-rest-assured-testing" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.automation.tests.day6.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.automation.tests.day6" />
-      <option name="MAIN_CLASS_NAME" value="com.automation.tests.day6.SpartanTests" />
-      <option name="METHOD_NAME" value="test7" />
+      <option name="METHOD_NAME" value="test8" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpartanTests.test7" />
-        <item itemvalue="JUnit.SpartanTests.test5" />
-        <item itemvalue="JUnit.POJOTesting.test1" />
-        <item itemvalue="JUnit.SpartanTests.test4" />
-        <item itemvalue="JUnit.SpartanTests.test3" />
+        <item itemvalue="JUnit.GitHub.test3" />
+        <item itemvalue="JUnit.GitHub.test2" />
+        <item itemvalue="JUnit.GitHub.test1" />
+        <item itemvalue="JUnit.SpartanTests.test2" />
+        <item itemvalue="JUnit.SpartanTests.test8" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580412165933</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="delete added">
+      <created>1580413163569</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1580413163569</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,6 +237,7 @@
     <MESSAGE value="Day5" />
     <MESSAGE value="Data Driven Added" />
     <MESSAGE value="utilities added" />
-    <option name="LAST_COMMIT_MESSAGE" value="utilities added" />
+    <MESSAGE value="delete added" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete added" />
   </component>
 </project>
