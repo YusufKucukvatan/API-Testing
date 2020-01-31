@@ -1,4 +1,5 @@
 package com.automation.selfStudy;
+
 import com.automation.pojos.Spartan;
 import com.automation.utilities.ConfigurationReader;
 import com.github.javafaker.Faker;
@@ -23,19 +24,19 @@ import static org.hamcrest.Matchers.*;
 
 public class GitHub {
     @BeforeAll
-    public static void setUp(){
+    public static void setUp() {
         baseURI = ConfigurationReader.getProperty("github.uri");
     }
 
     @Test
     @Description("Verify organization information")
-    public void test1(){
+    public void test1() {
 
         Response response =
                 given()
-                    .pathParam("org", "cucumber")
-                .when()
-                    .get("/orgs/{org}");
+                        .pathParam("org", "cucumber")
+                        .when()
+                        .get("/orgs/{org}");
 
         JsonPath json = response.jsonPath();
 
@@ -63,10 +64,10 @@ public class GitHub {
 
         Response response =
                 given()
-                    .accept("application/xml")
-                    .pathParam("org", "cucumber")
-                .when()
-                    .get("/orgs/{org}");
+                        .accept("application/xml")
+                        .pathParam("org", "cucumber")
+                        .when()
+                        .get("/orgs/{org}");
 
         JsonPath json = response.jsonPath();
 
@@ -100,16 +101,71 @@ public class GitHub {
         Response response2 =
                 given()
                         .pathParam("org", "cucumber")
-                .when()
+                        .when()
                         .get("/orgs/{org}/repos");
 
         JsonPath json2 = response2.jsonPath();
-        List<Map<String,?>> objects = json2.getList("");
+        List<Map<String, ?>> objects = json2.getList("");
         int numberOfObjects = objects.size();
         System.out.println(numberOfObjects);
 
-        assertEquals(publicRepos,numberOfObjects,"The number of the public repositories and object in response body is not matched...");
+        assertEquals(publicRepos, numberOfObjects, "The number of the public repositories and object in response body is not matched...");
 
     }
+    @Test
+    @Description("Ascending order by full_name sort")
+    public void test4() {
 
+        Response response =
+                given()
+                        .pathParam("org", "cucumber")
+                        .queryParam("sort", "full_name")
+                        .when()
+                        .get("/orgs/{org}/repos");
+
+        JsonPath json = response.jsonPath();
+        List<String> names = json.getList("name");
+        List<String> sortedNames = json.getList("name");
+        Collections.sort(sortedNames);
+        assertEquals(sortedNames,names);
+        System.out.println(names);
     }
+
+    @Test
+    @Description("Descending order by full_name sort")
+    public void test5() {
+
+        Response response =
+                given()
+                        .pathParam("org", "cucumber")
+                        .queryParam("sort", "full_name")
+                        .queryParam("direction", "desc")
+                .when()
+                        .get("/orgs/{org}/repos");
+
+        JsonPath json = response.jsonPath();
+        List<String> names = json.getList("name");
+        List<String> sortedNames = json.getList("name");
+        Collections.sort(sortedNames,Collections.reverseOrder());
+        assertEquals(sortedNames,names);
+        System.out.println(names);
+    }
+
+    @Test
+    @Description("Default sort")
+    public void test6() {
+
+        Response response =
+                given()
+                        .pathParam("org", "cucumber")
+                .when()
+                        .get("/orgs/{org}/repos");
+
+        JsonPath json = response.jsonPath();
+        List<String> created_at = json.getList("created_at");
+        List<String> sortedCreated_at = json.getList("created_at");
+        Collections.sort(sortedCreated_at);
+        assertEquals(sortedCreated_at,created_at);
+        System.out.println(created_at);
+    }
+}
