@@ -39,17 +39,19 @@ public class GitHub2 {
     @Description("Verify organization information")
     public void test1() {
 
-        Response response =
+
                 given()
-                    .accept(ContentType.JSON)
                     .pathParam("org","cucumber")
                 .when()
-                    .get("/orgs/{org}").prettyPeek();
-        response
+                    .get("/orgs/{org}")
                 .then()
                     .assertThat()
                         .statusCode(200)
-                        .contentType("application/json; charset=utf-8");
+                        .contentType("application/json; charset=utf-8")
+                        .body("login", is("cucumber"))
+                        .body("name", is("Cucumber"))
+                        .body("id", is(320565));
+
 
     }
 

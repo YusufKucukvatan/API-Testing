@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/pojos/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/pojos/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/pojos/Contact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/pojos/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/GitHub2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/ORDS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/School2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day7/PreschoolTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day7/SpartansTestsDay7.java" afterDir="false" />
+    <list default="true" id="4f8e5330-0726-45ba-9d8e-465c12163418" name="Default Changelist" comment="GitHub Homewrok added - 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/GitHub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/GitHub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/ORDSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day2/ORDSTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/tests/day6/SpartanTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/tests/day6/SpartanTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/automation/tests/day2/ORDSTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/GitHub2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/automation/selfStudy/GitHub2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
