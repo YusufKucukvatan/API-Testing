@@ -23,7 +23,7 @@ public class School {
     public void test1() {
         given()
                 .accept(ContentType.JSON)
-                .pathParam("student_id_XXX", 2414)
+                .pathParam("student_id_XXX", 2665)
                 .when()
                 .get("/student/{student_id_XXX}").prettyPeek()
                 .then()
@@ -32,10 +32,10 @@ public class School {
                 .headers("Vary", is("Accept-Encoding"))
                 .contentType("application/json;charset=UTF-8")
                 .header("Connection",is("Keep-Alive"))
-                .body("students[0].firstName", is("James"))
-                .body("students[0].lastName", is("Bond"))
+                .body("students[0].firstName", is("Celine"))
+                .body("students[0].lastName", is("Daar"))
                 .body("students[0].batch", is(12))
-                .body("students[0].company.address.zipCode", is(22102));
+                .body("students[0].company.address.zipCode", is(6789));
 
     }
     @Test
@@ -87,7 +87,7 @@ public class School {
     public void test3(){
         Response response = given()
                 .accept(ContentType.JSON)
-                .pathParam("student_id_yyy", 2414)
+                .pathParam("student_id_yyy", 2665)
                 .when()
                 .get("/student/{student_id_yyy}").prettyPeek();
 

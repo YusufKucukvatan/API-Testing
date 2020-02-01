@@ -2,7 +2,6 @@ package com.automation.selfStudy;
 
 import com.automation.pojos.Spartan;
 import com.automation.utilities.ConfigurationReader;
-import com.github.javafaker.Faker;
 import com.google.gson.Gson;
 import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;

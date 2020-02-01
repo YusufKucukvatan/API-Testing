@@ -15,7 +15,7 @@ public class ORDSTest {
     // data is coming from SQL Oracle data base to this web service
     // during back-end testing with SQL developer and JDBC API we are accessing data base directly
     // now we are gonna access web service
-    private String baseURI= "http://ec2-34-201-69-55.compute-1.amazonaws.com:1000/ords/hr";
+    private String baseURI= "http://ec2-54-146-141-21.compute-1.amazonaws.com:1000/ords/hr";
 
     //we start from given()
     //then we can specify type of request like: get(), put(), delete(), post()
@@ -65,6 +65,5 @@ public class ORDSTest {
             System.out.println(h);
         }
         response.prettyPrint();
-
     }
 }

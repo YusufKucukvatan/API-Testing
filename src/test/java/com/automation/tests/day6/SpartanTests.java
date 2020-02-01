@@ -11,10 +11,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.ResourceBundle;
+import java.util.*;
 
 import static io.restassured.RestAssured.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -170,19 +167,64 @@ public class SpartanTests {
         System.out.println(newUserIDs);
     }
 
+//    @Test
+//    @DisplayName("Adding new records through faker")
+//    public void test8(){
+//        Faker faker = new Faker();
+//        for(int i=0; i<10; i++){
+//        Spartan spartan = new Spartan();
+//        spartan.setSpartan_gender("Male");
+//        spartan.setSpartan_name(faker.name().firstName());
+//        spartan.setSpartan_phone(Long.parseLong(faker.phoneNumber().subscriberNumber(12).replaceAll("\\D","")));
+//            given()
+//                    .contentType(ContentType.JSON)
+//                    .body(spartan)
+//                    .post("/spartans").prettyPrint();
+//        }
+//    }
+
     @Test
-    @DisplayName("Adding new records through faker")
-    public void test8(){
-        Faker faker = new Faker();
-        for(int i=0; i<10; i++){
-        Spartan spartan = new Spartan();
-        spartan.setSpartan_gender("Male");
-        spartan.setSpartan_name(faker.name().firstName());
-        spartan.setSpartan_phone(Long.parseLong(faker.phoneNumber().subscriberNumber(12).replaceAll("\\D","")));
-            given()
-                    .contentType(ContentType.JSON)
-                    .body(spartan)
-                    .post("/spartans").prettyPrint();
-        }
+    @DisplayName("Update spartan")
+    public void test9() {
+        Spartan spartan = new Spartan().
+                withGender("Male").
+                withName("Guru of Java").
+                withPhone(9999999999L);
+
+        Response response = given().
+                accept(ContentType.JSON).
+                contentType(ContentType.JSON).
+                body(spartan).
+                pathParam("id", 380).
+                put("/spartans/{id}").prettyPeek();
+        //put update existing record
+        // also when you make PUT request, you need to specify entire body
+        //post - create new one
+        //we never POST/PUT id, it must be auto generated
+        //if it's not like this - it's a bug
+
+        // contentType(ContentType.JSON) in the given()
+        // you tell to the web service, what data you are sending
+    }
+
+    @Test
+    @DisplayName("Update only name with PATCH")
+    public void test10(){
+        Map<String, Long> update = new HashMap<>();
+        update.put("phone", 10000000000L);
+
+        Response response = given().
+                accept(ContentType.JSON).
+                contentType(ContentType.JSON).
+                body(update).
+                pathParam("id", 381).
+                patch("/spartans/{id}");
+
+        response.prettyPrint();
+        //POST - add new spartan
+        //PUT - update existing one, but you have to specify all properties
+        //PATCH - update existing one, but ypu may specify one or more properties to update
+
+
     }
 }
