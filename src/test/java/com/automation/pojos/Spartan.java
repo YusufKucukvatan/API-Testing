@@ -79,4 +79,5 @@ public class Spartan {
         this.spartan_gender = gender;
         return this;
     }
+
 }

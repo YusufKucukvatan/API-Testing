@@ -50,8 +50,7 @@ public class POJOTesting {
     @Test
     @DisplayName("Convert from POJO fto JSON")
     public void test2(){
-        Job sdet_pojo = new Job("SDET", "Software Development Engineer in Test", 90_000, 125_000);
-
+        Job sdet_pojo = new Job("SDET", "SDET", 90_000, 125_000);
         Gson gson = new Gson();
         String sdet_gson = gson.toJson(sdet_pojo); //==> convert from POJO to JSON: Serialization
 

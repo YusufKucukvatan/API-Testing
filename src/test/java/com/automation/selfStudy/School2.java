@@ -57,7 +57,7 @@ public class School2 {
         Map<String, ?> firstStudent = json.getMap("students[0]");
         System.out.println("firstStudent = " + firstStudent);
 
-        String firstName = json.getString("students[0].firstName");
+        String firstName = json.getString("students.firstName[0]");
         System.out.println("firstName = " + firstName);
 
         String city = json.getString("students[0].company.address.city");

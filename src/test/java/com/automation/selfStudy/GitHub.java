@@ -81,6 +81,8 @@ public class GitHub {
         String statusCodeMessage = response.getStatusLine();
         System.out.println("statusCodeMessage = " + statusCodeMessage);
         assertTrue(statusCodeMessage.contains("Unsupported Media Type"));
+
+
     }
 
     @Test
@@ -148,6 +150,7 @@ public class GitHub {
         Collections.sort(sortedNames,Collections.reverseOrder());
         assertEquals(sortedNames,names);
         System.out.println(names);
+
     }
 
     @Test
@@ -166,5 +169,7 @@ public class GitHub {
         Collections.sort(sortedCreated_at);
         assertEquals(sortedCreated_at,created_at);
         System.out.println(created_at);
+        System.out.println("name is :"+json.getString("[0].owner.login"));
+
     }
 }

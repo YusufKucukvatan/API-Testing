@@ -52,7 +52,79 @@ public class GitHub2 {
                         .body("name", is("Cucumber"))
                         .body("id", is(320565));
 
+    }
+
+    /*
+    Ascending order by full_name sort
+    1. Send a get request to /orgs/:org/repos. Request includes : • Path param org with value cucumber
+    • Query param sort with value full_name
+    2. Verify that all repositories are listed in alphabetical order based on the value of the field name
+     */
+    @Test
+    @Description("Ascending order by full_name sort")
+    public void test2() {
+
+        Response response =
+                given()
+                    .pathParam("org", "cucumber")
+                    .queryParam("sort","full_name")
+                .when()
+                    .get("/orgs/{org}/repos");
+
+        JsonPath json = response.jsonPath();
+
+        List<String> actualNames = json.getList("name");
+        System.out.println(actualNames);
+
+        List<String> expectedNames = json.getList("name");
+
+        Collections.sort(expectedNames);
+        System.out.println(expectedNames);
+
+        assertEquals(expectedNames,actualNames);
+
 
     }
 
+    /*
+    1. Send a get request to /orgs/:org. Request includes : • Path param org with value cucumber
+    2. Grab the value of the field id
+    3. Send a get request to /orgs/:org/repos. Request includes :
+    • Path param org with value cucumber
+    4. Verify that value of the id inside the owner object in every response is equal to value from step 2
+    //320565
+     */
+
+    @Test
+    @Description("Repository owner information")
+    public void test3() {
+
+        Response response1 = given()
+                .pathParam("org", "cucumber")
+                .when()
+                .get("/orgs/{org}");
+
+        JsonPath json1 =response1.jsonPath();
+        int id = json1.getInt("id");
+        System.out.println("id = " + id);
+
+        Response response2 =
+                given()
+                        .pathParam("org", "cucumber")
+                .when()
+                        .get("/orgs/{org}/repos");
+
+        JsonPath json2 = response2.jsonPath();
+
+        List<Integer> ids = json2.getList("owner.id");
+        System.out.println("ids = " + ids);
+
+        for (Integer each : ids) {
+            assertEquals(id, each);
+        }
+
+
+
+
+    }
 }

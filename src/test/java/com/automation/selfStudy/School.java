@@ -48,6 +48,9 @@ public class School {
 
         JsonPath json = response.jsonPath();
 
+        String nameById = json.getString("students.find{it.studentId==2665}.firstName");
+        System.out.println("nameById = " + nameById);
+
         List<Map<String, ?>> listOfMap = json.getList("students");
         for (Map<String, ?> each:listOfMap) {
         System.out.println(each);
@@ -77,10 +80,10 @@ public class School {
         response.then().assertThat().body("students[0].company.address",is(student1CompanyAddress));
 
 
-        String student1CompanyAddressZIP = json.getString("students[0].company.address.zipCode");
+        int student1CompanyAddressZIP = json.getInt("students[0].company.address.zipCode");
         System.out.println(student1CompanyAddressZIP);
-        assertEquals(22102,student1CompanyAddressZIP);
-        response.then().assertThat().body("students[0].company.address.zipCode",is(22102));
+        assertEquals(6789,student1CompanyAddressZIP);
+        response.then().assertThat().body("students[0].company.address.zipCode",is(6789));
     }
 
     @Test

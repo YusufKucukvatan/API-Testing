@@ -60,7 +60,7 @@ public class SpartanTests {
     }
 
     @Test
-    @Description("Collect all spartans into a collection and print phone numbers '/spartans' end-point")
+    @Description("Collect all spartans into a collection and print phone numbers from '/spartans' end-point")
     public void test3(){
         Response response =
                 given()
